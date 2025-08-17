@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: all;
+    transition-duration: 0.1s;
+    margin: 0;
+}
+
+main.dark,
+main.dark .flag {
+    background-color: #121212;
+    color: white;
+}
+
+main.dark .border-link,
+main.dark select,
+main.dark option,
+main.dark input,
+main.dark .back-btn,
+main.dark .shimmer-card,
+main.dark .image,
+main.dark .shimmer-card p,
+main.dark .shimmer-card p:first-child,
+main.dark .shimmer-countryDetails p,
+main.dark .shimmer-flag {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+header.dark {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-inline: 20px;
+    padding-block-end: 5px;
+    background-color: rgb(209, 209, 209);
+    color: unset;
+}
+
+.dark-light-mode {
+    cursor: pointer;
+    padding: 15px 15px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    padding-inline: 20px;
+    padding-block: 20px;
+    gap: 10px;
+}
+
+.search-container {
+    position: relative;
+    width: 350px;
+}
+
+.search-container .icon {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.search-container input {
+    padding: 10px 20px;
+    padding-left: 44px;
+    border: 0px;
+    outline: none;
+    box-shadow: 0px 0px 4px 0px;
+    border-radius: 10px;
+    width: 100%;
+    transition: all;
+    transition-duration: 0.1s;
+    background-color: unset;
+    color: unset;
+}
+
+.filter-container {
+    width: 250px;
+}
+
+.filter-container select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0px;
+    outline: none;
+    box-shadow: 0px 0px 4px 0px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 14px;
+    transition: all;
+    transition-duration: 0.1s;
+    background-color: unset;
+    color: unset;
+}
+
+.country-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    max-width: 1440px;
+    padding-inline: 20px;
+    gap: 25px;
+    padding-block: 30px;
+    margin-inline: auto;
+}
+
+.country-card {
+    box-shadow: 0px 0px 3px 0px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: all;
+    transition-duration: 75ms;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+}
+
+.country-name {
+    font-size: 24px;
+    margin-block: 5px;
+}
+
+.country-card .country-information {
+    padding-left: 16px;
+}
+
+.country-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.country-details-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-top: 30px;
+    min-height: calc(100vh - 133px);
+}
+
+.flag {
+    width: 400px;
+    background-color: rgb(240, 234, 234);
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+.flag img {
+    width: 100%;
+}
+
+.countryDetails {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.back-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 8%;
+    background-color: rgb(209, 209, 209);
+    color: black;
+    transition: all;
+    transition-duration: 0.1s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.country-detail-container {
+    padding-top: 10px;
+}
+
+.borders {
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+.border-link {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    transition: all;
+    transition-duration: 0.1s;
+    background-color: rgb(209, 209, 209);
+}
+
+
+.shimmer-card {
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(133, 133, 133);
+
+}
+
+.shimmer-card p {
+    background-color: rgb(133, 133, 133);
+    height: 18px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.shimmer-card p:first-child {
+    background-color: rgb(133, 133, 133);
+    height: 26px;
+}
+
+.shimmer-flag {
+    background-color: rgb(133, 133, 133);
+    height: 266px;
+}
+
+.shimmer-countryDetails p {
+    background-color: rgb(133, 133, 133);
+    height: 21px;
+    width: 226px;
+    border-radius: 5px;
+}
+
+.shimmer-countryDetails div:last-child {
+    align-self: start;
+}
+
+@media screen and (max-width: 700px) {
+    .countryDetails {
+        flex-direction: column;
+        gap: 0;
+        align-items: start;
+
+    }
+
+    .country-details-container {
+        flex-direction: column;
+        gap: 0;
+        align-items: start;
+        margin-inline-start: 50px;
+
+    }
+
+    .countryDetails div:first-child p:last-child {
+        margin-bottom: 0;
+    }
+}

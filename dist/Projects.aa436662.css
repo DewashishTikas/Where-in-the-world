@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  transition: all .1s;
+}
+
+main.dark, main.dark .flag {
+  color: #fff;
+  background-color: #121212;
+}
+
+main.dark .border-link, main.dark select, main.dark option, main.dark input, main.dark .back-btn, main.dark .shimmer-card, main.dark .image, main.dark .shimmer-card p, main.dark .shimmer-card p:first-child, main.dark .shimmer-countryDetails p, main.dark .shimmer-flag, header.dark {
+  color: #fff;
+  background-color: #1e1e1e;
+}
+
+header {
+  max-width: 1440px;
+  color: unset;
+  background-color: #d1d1d1;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 5px;
+  padding-inline: 20px;
+  display: flex;
+}
+
+.dark-light-mode {
+  cursor: pointer;
+  padding: 15px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+header div {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+.filter-search-container {
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 1400px;
+  padding-block: 20px;
+  padding-inline: 20px;
+  display: flex;
+}
+
+.search-container {
+  width: 350px;
+  position: relative;
+}
+
+.search-container .icon {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.search-container input {
+  background-color: unset;
+  width: 100%;
+  color: unset;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 44px;
+  transition: all .1s;
+  box-shadow: 0 0 4px;
+}
+
+.filter-container {
+  width: 250px;
+}
+
+.filter-container select {
+  background-color: unset;
+  width: 100%;
+  color: unset;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: all .1s;
+  box-shadow: 0 0 4px;
+}
+
+.country-card-container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+  gap: 25px;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 30px;
+  padding-inline: 20px;
+  display: grid;
+}
+
+.country-card {
+  border-radius: 10px;
+  padding-bottom: 10px;
+  transition: all 75ms;
+  box-shadow: 0 0 3px;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+}
+
+.country-name {
+  margin-block: 5px;
+  font-size: 24px;
+}
+
+.country-card .country-information {
+  padding-left: 16px;
+}
+
+.country-card img {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+.country-details-container {
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  max-width: 1440px;
+  min-height: calc(100vh - 133px);
+  margin-inline: auto;
+  padding-top: 30px;
+  display: flex;
+}
+
+.flag {
+  background-color: #f0eaea;
+  border-radius: 20px;
+  width: 400px;
+  transition: all .1s;
+}
+
+.flag img {
+  width: 100%;
+}
+
+.countryDetails {
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  display: flex;
+}
+
+.back-btn {
+  color: #000;
+  background-color: #d1d1d1;
+  border-radius: 5px;
+  outline: none;
+  align-items: center;
+  margin-left: 8%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .1s;
+  display: flex;
+}
+
+.country-detail-container {
+  padding-top: 10px;
+}
+
+.borders {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.border-link {
+  color: #000;
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: all .1s;
+  display: inline-block;
+}
+
+.shimmer-card {
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 0 0 3px;
+}
+
+.image {
+  background-color: #858585;
+  width: 100%;
+  height: 200px;
+}
+
+.shimmer-card p {
+  background-color: #858585;
+  width: 90%;
+  height: 18px;
+  margin-inline: auto;
+}
+
+.shimmer-card p:first-child {
+  background-color: #858585;
+  height: 26px;
+}
+
+.shimmer-flag {
+  background-color: #858585;
+  height: 266px;
+}
+
+.shimmer-countryDetails p {
+  background-color: #858585;
+  border-radius: 5px;
+  width: 226px;
+  height: 21px;
+}
+
+.shimmer-countryDetails div:last-child {
+  align-self: start;
+}
+
+@media screen and (width <= 700px) {
+  .countryDetails {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  .country-details-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    margin-inline-start: 50px;
+  }
+
+  .countryDetails div:first-child p:last-child {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=Projects.aa436662.css.map */
